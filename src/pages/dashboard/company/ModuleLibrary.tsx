@@ -51,6 +51,15 @@ const ModuleLibrary: React.FC = () => {
     
     setFilteredModules(result);
   }, [searchTerm, selectedCategory]);
+
+  // Format date for display
+  const formatDate = (date: Date) => {
+    return new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    });
+  };
   
   return (
     <div className="space-y-6">
@@ -133,7 +142,7 @@ const ModuleLibrary: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">Last Updated</p>
-                  <p className="text-sm font-medium text-gray-900">{module.lastUpdated}</p>
+                  <p className="text-sm font-medium text-gray-900">{formatDate(module.lastUpdated)}</p>
                 </div>
                 <div>
                   <p className="text-xs text-gray-500">Size</p>

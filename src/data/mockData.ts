@@ -17,6 +17,7 @@ export const companyAdminUser: User = {
   role: 'company_admin',
   companyId: '1',
   lastLogin: new Date('2023-07-14T14:32:11'),
+  department: 'Management',
 };
 
 // Sample Team Members
@@ -28,6 +29,7 @@ export const teamMembers: User[] = [
     role: 'developer',
     companyId: '1',
     lastLogin: new Date('2023-07-13T10:45:22'),
+    department: 'Engineering',
   },
   {
     id: '4',
@@ -36,6 +38,7 @@ export const teamMembers: User[] = [
     role: 'viewer',
     companyId: '1',
     lastLogin: new Date('2023-07-10T16:12:45'),
+    department: 'Marketing',
   },
   {
     id: '5',
@@ -44,6 +47,7 @@ export const teamMembers: User[] = [
     role: 'developer',
     companyId: '1',
     lastLogin: new Date('2023-07-12T09:18:36'),
+    department: 'Engineering',
   },
 ];
 
