@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Download, Filter, Calendar, FileText } from 'lucide-react';
+import { Download, Filter, Calendar, FileText, AlertTriangle, Package } from 'lucide-react';
 import Card from '../../../components/common/Card';
 import Button from '../../../components/common/Button';
 
